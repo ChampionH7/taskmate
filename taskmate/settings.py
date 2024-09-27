@@ -30,8 +30,9 @@ SECRET_KEY = env("DJANGO_SECURITY_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DJANGO_DEBUG")
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["localhost","127.0.0.1","taskmatehj.up.railway.app"]
 
+CSRF_TRUSTED_ORIGINS = ["taskmatehj.up.railway.app"]
 
 # Application definition
 
